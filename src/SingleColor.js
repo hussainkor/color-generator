@@ -20,8 +20,8 @@ export default function SingleColor({ rgb, weight, index }) {
         <div className={`color-box`} style={{ backgroundColor: `rgb(${bcg})` }}>
             <div className={`txt dark-color ${index > 8 && 'light-color'}`} >
                 <p>{weight}%</p>
-                <p onClick={() => handleCopy(hex)} title='Copy to Clipboard' className='copy'>{hex}</p>
-                {alert && <span>Copied</span>}
+                <p onClick={() => handleCopy(hex)} title='Click to Copy' className='copy'>{hex}</p>
+                {alert && <span>Copy to Clipboard</span>}
             </div>
         </div>
     )
